@@ -3,27 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D31C3B9126F21366006677AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C3B9026F21366006677AC /* AppDelegate.swift */; };
 		D31C3B9326F21366006677AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C3B9226F21366006677AC /* SceneDelegate.swift */; };
-		D31C3B9526F21366006677AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C3B9426F21366006677AC /* ContentView.swift */; };
+		D31C3B9526F21366006677AC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C3B9426F21366006677AC /* RootView.swift */; };
 		D31C3B9726F21368006677AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31C3B9626F21368006677AC /* Assets.xcassets */; };
 		D31C3B9A26F21368006677AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31C3B9926F21368006677AC /* Preview Assets.xcassets */; };
 		D31C3B9D26F21368006677AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31C3B9B26F21368006677AC /* LaunchScreen.storyboard */; };
+		D31C3BA526F25CEB006677AC /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31C3BA426F25CEB006677AC /* FoodListView.swift */; };
+		D39D4CF526F32F3F008C507F /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39D4CF426F32F3F008C507F /* FoodView.swift */; };
+		D39D4CF826F331BB008C507F /* BetterSheet in Frameworks */ = {isa = PBXBuildFile; productRef = D39D4CF726F331BB008C507F /* BetterSheet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D31C3B8D26F21366006677AC /* SwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31C3B9026F21366006677AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D31C3B9226F21366006677AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D31C3B9426F21366006677AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D31C3B9426F21366006677AC /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		D31C3B9626F21368006677AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D31C3B9926F21368006677AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D31C3B9C26F21368006677AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D31C3B9E26F21368006677AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D31C3BA426F25CEB006677AC /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		D39D4CF426F32F3F008C507F /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D39D4CF826F331BB008C507F /* BetterSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +64,9 @@
 			children = (
 				D31C3B9026F21366006677AC /* AppDelegate.swift */,
 				D31C3B9226F21366006677AC /* SceneDelegate.swift */,
-				D31C3B9426F21366006677AC /* ContentView.swift */,
+				D31C3B9426F21366006677AC /* RootView.swift */,
+				D31C3BA426F25CEB006677AC /* FoodListView.swift */,
+				D39D4CF426F32F3F008C507F /* FoodView.swift */,
 				D31C3B9626F21368006677AC /* Assets.xcassets */,
 				D31C3B9B26F21368006677AC /* LaunchScreen.storyboard */,
 				D31C3B9E26F21368006677AC /* Info.plist */,
@@ -91,6 +99,9 @@
 			dependencies = (
 			);
 			name = SwiftUIApp;
+			packageProductDependencies = (
+				D39D4CF726F331BB008C507F /* BetterSheet */,
+			);
 			productName = SwiftUIApp;
 			productReference = D31C3B8D26F21366006677AC /* SwiftUIApp.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +129,9 @@
 				Base,
 			);
 			mainGroup = D31C3B8426F21366006677AC;
+			packageReferences = (
+				D39D4CF626F331BB008C507F /* XCRemoteSwiftPackageReference "BetterSheet" */,
+			);
 			productRefGroup = D31C3B8E26F21366006677AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D31C3BA526F25CEB006677AC /* FoodListView.swift in Sources */,
+				D39D4CF526F32F3F008C507F /* FoodView.swift in Sources */,
 				D31C3B9126F21366006677AC /* AppDelegate.swift in Sources */,
 				D31C3B9326F21366006677AC /* SceneDelegate.swift in Sources */,
-				D31C3B9526F21366006677AC /* ContentView.swift in Sources */,
+				D31C3B9526F21366006677AC /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D39D4CF626F331BB008C507F /* XCRemoteSwiftPackageReference "BetterSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/egeniq/BetterSheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D39D4CF726F331BB008C507F /* BetterSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D39D4CF626F331BB008C507F /* XCRemoteSwiftPackageReference "BetterSheet" */;
+			productName = BetterSheet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D31C3B8526F21366006677AC /* Project object */;
 }
